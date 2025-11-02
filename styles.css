@@ -179,7 +179,7 @@ header ul :hover {
     .sec-one {
         display: flex;
         background-color: #9dbbf8;
-        height: 110vh;
+        height: 70vh;
         flex-direction: column;
 
     }
@@ -228,18 +228,18 @@ header ul :hover {
 
     .sec-one img {
         width: 25%;
-        height: 50vh;
+        height: 30vh;
     }
 
     .img-oo {
-        top: 5px;
-        left: 38%;
+        top: 10px;
+        left: 58%;
         transform: rotate(4deg);
     }
 
     .img-ooo {
-        top: 5px;
-        left: 10%;
+        top: 10px;
+        left: 30%;
         transform: rotate(-4deg);
 
     }
