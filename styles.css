@@ -135,7 +135,7 @@ header button {
     }
 
     .header .active {
-        transform: translate(-100%);
+        transform: translate(-150%);
     }
 
 }
