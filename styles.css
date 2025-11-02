@@ -28,7 +28,7 @@ header img {
     width: 150px;
 }
 
-.header nav {
+.header nav ul {
     display: flex;
     list-style: none;
     gap: 30px;
