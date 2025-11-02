@@ -28,33 +28,46 @@ header img {
     width: 150px;
 }
 
-header ul {
+.header nav {
     display: flex;
     list-style: none;
     gap: 30px;
 }
 
-header ul li {
+.header nav li {
     font-size: 16px;
     cursor: pointer;
 }
 
 
 
-header ul li a {
+.header nav li a {
     text-decoration: none;
     color: black;
 }
 
-header ul :hover {
+.header nav li:hover {
     color: #007bff;
 }
 
-.menu {
+.menu-btn {
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
     display: none;
-    font-size: 30px;
+    transition: 0.4s ease-in-out;
+
+    font-size: 60px;
     cursor: pointer;
 }
+
+header button {
+
+    display: none;
+
+}
+
 
 @media (max-width: 800px) {
     header {
@@ -73,30 +86,46 @@ header ul :hover {
 
     }
 
-    header ul {
+    .header nav ul {
         display: flex;
         list-style: none;
-        gap: 30px;
-        display: none;
+        gap: 20px;
+        position: absolute;
+        background-color: white;
+        top: 40px;
+        left: 220px;
+        flex-direction: column;
+        height: fit-content;
+        gap: 2rem;
+        width: 10rem;
+        margin-top: -2rem;
+        padding: 10px;
+        text-align: center;
+        border-radius: 15px;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+        padding-top: 2rem;
+        transform: translate(-300%);
+        transition: 0.3s ease-in-out;
+
     }
 
-    header ul li {
+    .header nav li {
         font-size: 16px;
         cursor: pointer;
     }
 
 
 
-    header ul li a {
+    .header nav li a {
         text-decoration: none;
         color: black;
     }
 
-    header ul :hover {
+    .header nav ul li:hover {
         color: #007bff;
     }
 
-    .menu {
+    .menu-btn {
         display: block;
         font-size: 23px;
         margin: 0;
@@ -104,6 +133,11 @@ header ul :hover {
         cursor: pointer;
         color: #007bff;
     }
+
+    .header .active {
+        transform: translate(20%);
+    }
+
 }
 
 
@@ -707,22 +741,27 @@ footer a {
     footer {
         background-color: #3c3744;
         padding: 10px;
+
     }
 
     .ff {
         margin: 0px;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+
+        flex-wrap: wrap;
     }
 
     .ff h2 {
         margin: 0px;
         padding: 0px;
+        font-size: 16px;
     }
 
     footer div {
         margin: 0px;
         color: white;
+        width: 50%;
         padding-top: 25px;
         text-align: start;
 
@@ -732,6 +771,7 @@ footer a {
         margin: 0px;
         padding: 0px;
         line-height: 20px;
+        font-size: 13px;
     }
 
     footer a {
