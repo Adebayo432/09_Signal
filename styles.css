@@ -232,17 +232,18 @@ header button {
 
     .sec-one h1 {
         font-family: Inter, sans-serif;
-        font-size: 35px;
+        font-size: 30px;
         font-weight: 900;
-        line-height: 30px;
         margin: 0;
-        width: 90%;
+        width: 100%;
         color: oklch(0.278 0.033 256.848);
     }
 
     .sec-one p {
-        font-size: 17px;
+        font-size: 15px;
+        line-height: 25px;
         color: oklch(0.278 0.033 256.848);
+        width: 100%;
     }
 
     .sec-one button {
